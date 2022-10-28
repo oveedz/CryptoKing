@@ -42,6 +42,7 @@ class HomeViewModel: ObservableObject {
 //  Bool used to show sheet
     @Published var showLoginPage: Bool = false
     @Published var isLoggedIn: Bool = false
+    @Published var loginUpdateMessage: String = ""
 
     
     @Published var lowestToHighestIsChecked: Bool = false
@@ -148,7 +149,10 @@ class HomeViewModel: ObservableObject {
         FirebaseViewModel.instance.auth.signIn(withEmail: email, password: password) { res, error in
             if let error = error {
                 print(error.localizedDescription)
+                self.loginUpdateMessage = "Error signing in: \(error.localizedDescription)"
+                return
             }
+            self.loginUpdateMessage = "Welcome \(res?.user.uid ?? "")"
         }
     }
     
@@ -156,9 +160,10 @@ class HomeViewModel: ObservableObject {
         FirebaseViewModel.instance.auth.createUser(withEmail: email, password: password) { res, error in
             if let error = error {
                 print(error.localizedDescription)
+                self.loginUpdateMessage = "Error signing in: \(error.localizedDescription)"
+                return
             }
-            print("Success sign up")
-
+            self.loginUpdateMessage = "Successfully created account: \(res?.user.uid ?? "")"
         }
     }
 

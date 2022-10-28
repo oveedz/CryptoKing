@@ -41,9 +41,16 @@ struct LoginView: View {
                         } label: {
                             PrimaryButtonView(buttonTitle: isShowingLoginPage ? "Log in": "Create account")
                         }
-                                    
+                                
+                        Text(vm.loginUpdateMessage)
+                            .font(.headline)
+                            .foregroundColor(.red)
+                            .fontWeight(.semibold)
+
+                        
                         accountButton
                     }
+                    
                     Spacer()
 
                 }
@@ -156,6 +163,7 @@ struct LoginView: View {
             Button {
                 withAnimation(.spring()) {
                     isShowingLoginPage.toggle()
+                    vm.loginUpdateMessage = ""
                 }
                 
             } label: {
