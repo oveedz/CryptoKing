@@ -24,7 +24,7 @@ struct HomeView: View {
                 //          Content Layer
                 VStack {
                     homeHeader
-                    
+                                        
                     SearchBarView(textFieldText: $vm.textFieldText)
                     
                     allCoinList

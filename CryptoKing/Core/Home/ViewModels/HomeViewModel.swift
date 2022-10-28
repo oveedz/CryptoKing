@@ -36,12 +36,12 @@ class HomeViewModel: ObservableObject {
     @Published var email: String = ""
     @Published var password: String = ""
     @Published var profileImage: UIImage? = nil
+    @Published var isShowingImagePicker: Bool = false
+
 
 //  Bool used to show sheet
     @Published var showLoginPage: Bool = false
-    
     @Published var isLoggedIn: Bool = false
-
 
     
     @Published var lowestToHighestIsChecked: Bool = false

@@ -7,8 +7,9 @@
 
 import SwiftUI
 
-struct HomeStatsView: View {
+struct GlobalMarketView: View {
     
+//  Dummy data for UI purposes
     let statistics: [Statistic] = [
     Statistic(title: "Title", value: "Value", percentageChange: 1),
     Statistic(title: "Title", value: "Value"),
@@ -17,16 +18,17 @@ struct HomeStatsView: View {
     
     var body: some View {
         HStack(spacing: 20) {
-            ForEach(self.statistics) { stat in
+            ForEach(statistics) { stat in
                 StatisticView(stat: stat)
-                    .padding()
+                    .frame(width: UIScreen.main.bounds.width * 0.33)
             }
         }
+        .frame(width: UIScreen.main.bounds.width)
     }
 }
 
 struct HomeStatsView_Previews: PreviewProvider {
     static var previews: some View {
-        HomeStatsView()
+        GlobalMarketView()
     }
 }

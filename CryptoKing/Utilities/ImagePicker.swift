@@ -10,7 +10,7 @@ import SwiftUI
 
 struct ImagePicker: UIViewControllerRepresentable {
     @Binding var image: UIImage?
-    private var controller = UIImagePickerController()
+    private let controller = UIImagePickerController()
     
     func makeUIViewController(context: Context) -> some UIViewController {
         controller.delegate = context.coordinator

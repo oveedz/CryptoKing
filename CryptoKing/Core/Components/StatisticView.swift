@@ -14,19 +14,31 @@ struct StatisticView: View {
             Text(stat.title)
                 .font(.caption)
                 .foregroundColor(Color.theme.secondaryText)
-            Text(stat.value)
-                .font(.headline)
+            HStack {
+                Text(stat.value)
+                    .font(.headline)
                 .foregroundColor(Color.theme.secondaryText)
-            
-                HStack {
-                    Image(systemName: "triangle.fill")
+                
+                
+                HStack(spacing: 0) {
+                    Image(systemName: (stat.percentageChange ?? 0) >= 0 ? "plus" : "")
                         .font(.caption2)
-                        .rotationEffect(Angle(degrees: stat.percentageChange ?? 0 >= 0 ? 0:180))
-                        .foregroundColor(stat.percentageChange ?? 0 > 0 ? .green : .red)
+                        .foregroundColor(.black)
                     Text(stat.percentageChange?.asPercentString() ?? "")
                         .font(.caption)
-                        .foregroundColor(Color.theme.secondaryText)
+                        .foregroundColor(Color.black)
                 }
+                .padding(5)
+                .overlay {
+                    RoundedRectangle(cornerRadius: 20)
+                        .stroke(lineWidth: 2)
+                        .fill(Color.green)
+                }
+                .background((stat.percentageChange ?? 0) >= 0 ? Color.green.opacity(0.7) : Color.red.opacity(0.7))
+                .cornerRadius(20)
+            }
+            
+
 //            Modifying the opacity as opposed to using an if let so when this object
 //            is placed in a frame it stays aligned 
                 .opacity(stat.percentageChange == nil ? 0 : 1.0)
@@ -37,6 +49,6 @@ struct StatisticView: View {
 
 struct StatisticView_Previews: PreviewProvider {
     static var previews: some View {
-        StatisticView(stat: dev.stat3)
+        StatisticView(stat: dev.stat1)
     }
 }

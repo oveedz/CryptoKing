@@ -11,6 +11,7 @@ import UIKit
 struct LoginView: View {
     @EnvironmentObject var vm: HomeViewModel
     @State var isShowingLoginPage: Bool = true
+
     var body: some View {
 //      background v stack
             VStack(spacing: 20) {
@@ -52,6 +53,9 @@ struct LoginView: View {
             .frame(maxWidth: .infinity, maxHeight: .infinity)
             .ignoresSafeArea()
             .background(Color.theme.background)
+            .sheet(isPresented: $vm.isShowingImagePicker) {
+                ImagePicker(image: $vm.profileImage)
+            }
     }
     
     
@@ -91,11 +95,25 @@ struct LoginView: View {
     
     private var imagePicker: some View {
         Button {
-            
+            vm.isShowingImagePicker.toggle()
         } label: {
-            Image(systemName: "person.crop.circle.fill.badge.plus")
-                .foregroundColor(Color.theme.accent)
-                .font(.system(size: 80, weight: .light, design: .rounded))
+            if let image = vm.profileImage {
+                Image(uiImage: image)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 150, height: 150)
+                    .cornerRadius(75)
+                    .overlay {
+                        Circle()
+                            .stroke(lineWidth: 3)
+                            .fill(Color.theme.accent)
+                    }
+
+            } else {
+                Image(systemName: "person.crop.circle.fill.badge.plus")
+                    .foregroundColor(Color.theme.accent)
+                    .font(.system(size: 80, weight: .light, design: .rounded))
+            }
         }
     }
     
