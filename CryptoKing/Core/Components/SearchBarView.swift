@@ -16,10 +16,10 @@ struct SearchBarView: View {
                     textFieldText.isEmpty ? Color.theme.secondaryText : Color.theme.accent
                 )
                 .padding()
-            
-            TextField("", text: $textFieldText, prompt: Text("Search by name or symbol"))
-                .foregroundColor(Color.theme.accent)
-                .offset(x: -15)
+            UITextFieldViewRepresentable(textFieldText: $textFieldText,
+                                         placeholder: "Search by name or symbol",
+                                         foregroundColor: Color.theme.accent)
+                .offset(x: -15, y: -1)
                 .disableAutocorrection(true)
             
             if !textFieldText.isEmpty {

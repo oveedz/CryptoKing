@@ -12,8 +12,6 @@ struct HomeView: View {
     @State private var showProfile: Bool = false
     @State private var showFilter: Bool = false
     @State var isScrolling: Bool = false
-    
-
 
     var body: some View {
         NavigationView {

@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8C2741DB2900AE44007D7182 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2741DA2900AE44007D7182 /* PrimaryButton.swift */; };
-		8C2741DD2900AFAA007D7182 /* TextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C2741DC2900AFAA007D7182 /* TextFieldView.swift */; };
 		8C42B67928FC9AB600B2DC78 /* LogInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C42B67828FC9AB600B2DC78 /* LogInView.swift */; };
 		8C4EB20728F39589006F8594 /* CoinImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4EB20628F39589006F8594 /* CoinImageView.swift */; };
 		8C4EB20928F39710006F8594 /* CoinImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4EB20828F39710006F8594 /* CoinImageService.swift */; };
@@ -22,7 +21,6 @@
 		8C66D24528C8A9B800386E47 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C66D24428C8A9B800386E47 /* HomeViewModel.swift */; };
 		8C66D24728C8B0F100386E47 /* CoinDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C66D24628C8B0F100386E47 /* CoinDataService.swift */; };
 		8C67BB5828FD53A1001245AA /* FirebaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C67BB5728FD53A1001245AA /* FirebaseViewModel.swift */; };
-		8C67BB5928FD584C001245AA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CD4063F28E62D3300B943AC /* GoogleService-Info.plist */; };
 		8C6A278D2902DE22001AD275 /* CoinDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6A278C2902DE22001AD275 /* CoinDetailView.swift */; };
 		8C6A278F2902DFF9001AD275 /* CoinFilterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6A278E2902DFF9001AD275 /* CoinFilterView.swift */; };
 		8C6A27912902E0A2001AD275 /* XmarkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C6A27902902E0A2001AD275 /* XmarkView.swift */; };
@@ -44,12 +42,14 @@
 		8CD4064328E6302000B943AC /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 8CD4064228E6302000B943AC /* FirebaseAuth */; };
 		8CD4064528E6302000B943AC /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 8CD4064428E6302000B943AC /* FirebaseStorage */; };
 		8CD4064728E67F8300B943AC /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD4064628E67F8300B943AC /* ImagePicker.swift */; };
+		8CD62A332937326900D2BBEB /* UITextFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD62A322937326900D2BBEB /* UITextFieldView.swift */; };
+		8CD62A352937357400D2BBEB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8CD62A342937357300D2BBEB /* GoogleService-Info.plist */; };
+		8CD62A372937436A00D2BBEB /* UITextFieldProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CD62A362937436A00D2BBEB /* UITextFieldProfileView.swift */; };
 		8CFA3E7E285CCB0B001DDFC5 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8CFA3E7D285CCB0B001DDFC5 /* Coin.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8C2741DA2900AE44007D7182 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
-		8C2741DC2900AFAA007D7182 /* TextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldView.swift; sourceTree = "<group>"; };
 		8C42B67828FC9AB600B2DC78 /* LogInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInView.swift; sourceTree = "<group>"; };
 		8C4EB20628F39589006F8594 /* CoinImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageView.swift; sourceTree = "<group>"; };
 		8C4EB20828F39710006F8594 /* CoinImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinImageService.swift; sourceTree = "<group>"; };
@@ -82,8 +82,10 @@
 		8C96CE2128CD1D1900D280F6 /* NetworkingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingManager.swift; sourceTree = "<group>"; };
 		8C96CE2328CD71E400D280F6 /* LocalFileManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalFileManager.swift; sourceTree = "<group>"; };
 		8CB100E5286470F00067CAC4 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
-		8CD4063F28E62D3300B943AC /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		8CD4064628E67F8300B943AC /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		8CD62A322937326900D2BBEB /* UITextFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldView.swift; sourceTree = "<group>"; };
+		8CD62A342937357300D2BBEB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8CD62A362937436A00D2BBEB /* UITextFieldProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldProfileView.swift; sourceTree = "<group>"; };
 		8CFA3E7D285CCB0B001DDFC5 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,7 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				8C2741DA2900AE44007D7182 /* PrimaryButton.swift */,
-				8C2741DC2900AFAA007D7182 /* TextFieldView.swift */,
+				8CD62A362937436A00D2BBEB /* UITextFieldProfileView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -219,8 +221,8 @@
 				8CFA3E7A285CCAC8001DDFC5 /* Models */,
 				8C5A029A285B3BD6007C3582 /* Core */,
 				8C7B59E0285A5BF9005E2D80 /* CryptoKingApp.swift */,
+				8CD62A342937357300D2BBEB /* GoogleService-Info.plist */,
 				8C7B59E4285A5BFC005E2D80 /* Assets.xcassets */,
-				8CD4063F28E62D3300B943AC /* GoogleService-Info.plist */,
 				8C7B59E6285A5BFC005E2D80 /* Preview Content */,
 			);
 			path = CryptoKing;
@@ -241,6 +243,7 @@
 				8C96CE2328CD71E400D280F6 /* LocalFileManager.swift */,
 				8CD4064628E67F8300B943AC /* ImagePicker.swift */,
 				8C6A279629041551001AD275 /* CoinFilterManager.swift */,
+				8CD62A322937326900D2BBEB /* UITextFieldView.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -320,9 +323,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8CD62A352937357400D2BBEB /* GoogleService-Info.plist in Resources */,
 				8C7B59E8285A5BFC005E2D80 /* Preview Assets.xcassets in Resources */,
 				8C7B59E5285A5BFC005E2D80 /* Assets.xcassets in Resources */,
-				8C67BB5928FD584C001245AA /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,10 +354,10 @@
 				8C4EB20B28F399FA006F8594 /* CoinImageViewModel.swift in Sources */,
 				8C66D24328C89E4800386E47 /* PreviewProvider.swift in Sources */,
 				8C6D56A82908B63900FB80BB /* CryptoKingSplashView.swift in Sources */,
-				8C2741DD2900AFAA007D7182 /* TextFieldView.swift in Sources */,
 				8C6D56AE2909B63F00FB80BB /* GlobalMarketView.swift in Sources */,
 				8C64448A28F4E0E70058817D /* SearchBarView.swift in Sources */,
 				8C96CE2228CD1D1900D280F6 /* NetworkingManager.swift in Sources */,
+				8CD62A332937326900D2BBEB /* UITextFieldView.swift in Sources */,
 				8C6A278F2902DFF9001AD275 /* CoinFilterView.swift in Sources */,
 				8C7B82CC286079DF0073D195 /* CoinRowView.swift in Sources */,
 				8C4EB20728F39589006F8594 /* CoinImageView.swift in Sources */,
@@ -362,6 +365,7 @@
 				8C64BDC5290C20D600E2170C /* MarketData.swift in Sources */,
 				8C6A279729041551001AD275 /* CoinFilterManager.swift in Sources */,
 				8C6A279329037D42001AD275 /* ToggleStyle.swift in Sources */,
+				8CD62A372937436A00D2BBEB /* UITextFieldProfileView.swift in Sources */,
 				8C5A0299285B308E007C3582 /* Color.swift in Sources */,
 				8C4EB20928F39710006F8594 /* CoinImageService.swift in Sources */,
 				8C67BB5828FD53A1001245AA /* FirebaseViewModel.swift in Sources */,

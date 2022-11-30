@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>1094545050397-o5p12k6dn2um14616goigp4ks8hikgtb.apps.googleusercontent.com</string>
+	<string>922325997856-rtfgbpdf1jj30kripr4f4srdo22buob0.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.1094545050397-o5p12k6dn2um14616goigp4ks8hikgtb</string>
+	<string>com.googleusercontent.apps.922325997856-rtfgbpdf1jj30kripr4f4srdo22buob0</string>
 	<key>API_KEY</key>
-	<string>AIzaSyBi2NbUvprLXSn0buW1sZJLUKkfGK5xfho</string>
+	<string>AIzaSyD4Mvf8B5WN0Ac6_5u9bjf0qPkDtNLj-cc</string>
 	<key>GCM_SENDER_ID</key>
-	<string>1094545050397</string>
+	<string>922325997856</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.oveedz.CryptoKing</string>
 	<key>PROJECT_ID</key>
-	<string>cryptoking-5c6cc</string>
+	<string>cryptoking-d4b17</string>
 	<key>STORAGE_BUCKET</key>
-	<string>cryptoking-5c6cc.appspot.com</string>
+	<string>cryptoking-d4b17.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:1094545050397:ios:73df645ac0ee2bc2f86ff4</string>
+	<string>1:922325997856:ios:df85334b260afeb9f11f45</string>
 </dict>
 </plist>

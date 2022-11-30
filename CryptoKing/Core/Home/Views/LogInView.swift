@@ -65,26 +65,6 @@ struct LoginView: View {
             }
     }
     
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     private var header: some View {
         VStack(alignment: .leading) {
             Text(isShowingLoginPage ? "Log in" : "Create account")
@@ -128,28 +108,21 @@ struct LoginView: View {
         VStack(spacing: 20) {
             if isShowingLoginPage == false {
                 HStack {
-                    TextFieldView(keyboardType: .emailAddress,
-                                  text: $vm.name,
-                                  textPrompt: Text("Name"))
-                    
+                    UITextFieldProfileView(textFieldText: $vm.name,
+                                           keyboardType: .default,
+                                           placeholderText: "Name")
                 }
             }
             
             HStack {
-                TextFieldView(keyboardType: .emailAddress,
-                              text: $vm.email,
-                              textPrompt: Text("Email"))
-                
+                UITextFieldProfileView(textFieldText: $vm.email,
+                                       keyboardType: .emailAddress,
+                                       placeholderText: "Email")
             }
-            SecureField("", text: $vm.password, prompt: Text("Password"))
-                .frame(maxWidth: .infinity)
-                .frame(height: 20)
-                .padding()
-                .overlay {
-                    RoundedRectangle(cornerRadius: 10)
-                        .stroke(lineWidth: 0.5)
-                        .fill(Color.theme.accent)
-                }
+            UITextFieldProfileView(textFieldText: $vm.password,
+                                   keyboardType: .emailAddress,
+                                   placeholderText: "Password",
+                                   isSecure: true)
         }
         .foregroundColor(.white)
     }
